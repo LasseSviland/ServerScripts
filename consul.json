@@ -1,0 +1,11 @@
+
+{ 
+    "service": { 
+        "name": "www", 
+        "port": 80, 
+        "tags": ["www", "webserver"],  "check": { 
+            "script": "netstat -anltp | grep 80", 
+            "interval": "10s"
+        }  
+    }
+}
